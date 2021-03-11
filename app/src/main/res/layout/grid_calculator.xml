@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@mipmap/background3"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    >
+
+
+
+    <Button
+        android:id="@+id/button_c"
+        android:layout_margin="5sp"
+        android:text="@string/_c"
+        android:textSize="@dimen/button_text" />
+
+
+    <Button
+        android:id="@+id/button_dev"
+        android:layout_margin="5sp"
+        android:text="@string/_dev"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_mul"
+        android:layout_margin="5sp"
+        android:text="@string/_mul"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_min"
+        android:layout_margin="5sp"
+        android:text="@string/_min"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_margin="5sp"
+        android:text="@string/_1"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_margin="5sp"
+        android:text="@string/_2"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_margin="5sp"
+        android:text="@string/_3"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_pls"
+        android:layout_margin="5sp"
+        android:text="@string/_pls"
+        android:textSize="@dimen/button_text" />
+
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_margin="5sp"
+        android:text="@string/_4"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_margin="5sp"
+        android:text="@string/_5"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_margin="5sp"
+        android:text="@string/_6"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_equall"
+        android:layout_rowSpan="3"
+        android:layout_gravity="fill"
+        android:layout_margin="5sp"
+        android:text="@string/_equall"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/_7"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_margin="5sp"
+        android:text="@string/_8"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_margin="5sp"
+        android:text="@string/_9"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_margin="5sp"
+        android:text="@string/_0"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/button_point"
+        android:layout_margin="5sp"
+        android:text="@string/_point"
+        android:textSize="@dimen/button_text" />
+
+
+</GridLayout>
