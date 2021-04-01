@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>grid_calculator.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+grid_calculator.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;FrameLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;#f0d6c9&quot;</span>
+        <span class="s1">android:scaleType</span><span class="s2">=&quot;centerCrop&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@mipmap/background3&quot; </span><span class="s0">/&gt;</span>
+
+
+    <span class="s0">&lt;GridLayout </span><span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;@mipmap/background3&quot;</span>
+        <span class="s1">android:columnCount</span><span class="s2">=&quot;4&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/field_result&quot;</span>
+            <span class="s1">android:layout_columnSpan</span><span class="s2">=&quot;4&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;fill&quot;</span>
+            <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;5dp&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;#ffffff&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;@dimen/button_text&quot;</span>
+           <span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_c&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_c&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_dev&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_dev&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_mul&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_mul&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_min&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_min&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_1&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_1&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_2&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_2&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_3&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_3&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_pls&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_pls&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_4&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_4&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_5&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_5&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_6&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_6&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_equall&quot;</span>
+            <span class="s1">android:layout_rowSpan</span><span class="s2">=&quot;3&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;fill&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_equall&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_7&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_7&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_8&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_8&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_9&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_9&quot;</span>
+            <span class="s1">style</span><span class="s2">=&quot;@style/MyCoolStyle&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;com.google.android.material.button.MaterialButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/button_0&quot;</span>
+            <span class="s1">android:layout_columnSpan</span><span class="s2">=&quot;3&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;fill&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/_0&quot;</span>
+            <span class="s1">astyle</span><span class="s2">=&quot;@style/MyCoolStyle&quot;</span><span class="s0">/&gt;</span>
+
+
+
+
+    <span class="s0">&lt;/GridLayout&gt;</span>
+<span class="s0">&lt;/FrameLayout&gt;</span></pre>
+</body>
+</html>

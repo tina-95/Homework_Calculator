@@ -8,21 +8,19 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f0d6c9"
-        android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/background3" />
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop" />
 
 
     <GridLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@mipmap/background3"
         android:columnCount="4"
         android:orientation="horizontal">
 
 
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_result"
             android:layout_columnSpan="4"
             android:layout_gravity="fill"
@@ -30,99 +28,105 @@
             android:background="#ffffff"
             android:textSize="@dimen/button_text" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_c"
-            android:text="@string/_c"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_c" />
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_dev"
-            android:text="@string/_dev"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_dev" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_mul"
-            android:text="@string/_mul"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_mul" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_min"
-            android:text="@string/_min"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_min" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
-            android:text="@string/_1"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
-            android:text="@string/_2"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
-            android:text="@string/_3"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_pls"
-            android:text="@string/_pls"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_pls" />
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
-            android:text="@string/_4"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
-            android:text="@string/_5"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
-            android:text="@string/_6"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equall"
             android:layout_rowSpan="3"
             android:layout_gravity="fill"
-            android:text="@string/_equall"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_equall" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_7"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
-            android:text="@string/_8"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
-            android:text="@string/_9"
-            android:textSize="@dimen/button_text" />
+            android:text="@string/_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
-            android:layout_columnSpan="2"
+            android:layout_columnSpan="3"
             android:layout_gravity="fill"
-            android:text="@string/_0"
-            android:textSize="@dimen/button_text" />
-
-        <Button
-            android:id="@+id/button_point"
-            android:text="@string/_point"
-            android:textSize="@dimen/button_text" />
-
+            android:text="@string/_0" />
 
     </GridLayout>
+
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cool_style"
+            android:textSize="24sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/original_style"
+            android:textSize="24sp" />
+
+
+    </RadioGroup>
 </FrameLayout>
