@@ -1,19 +1,20 @@
-package com.example.homework_calculator;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-
-import android.graphics.drawable.Drawable;
+package com.example.homework_calculator.ui;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatDelegate;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.homework_calculator.R;
+import com.example.homework_calculator.logic.CalculatorLogics;
+import com.google.android.material.radiobutton.MaterialRadioButton;
 
-    static{
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
+public class MainActivity extends BaseActivity {
+
+
+    static {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }
 
 
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_calculator);
+
+        initThemeChooser();
 
         Button buttonC = findViewById(R.id.button_c);
         Button buttonDev = findViewById(R.id.button_dev);
@@ -41,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonEight = findViewById(R.id.button_8);
         Button buttonNine = findViewById(R.id.button_9);
         Button buttonZero = findViewById(R.id.button_0);
-        Button buttonPoint = findViewById(R.id.button_point);
         TextView fieldResult = findViewById(R.id.field_result);
-
 
 
         calc = new CalculatorLogics();
@@ -76,8 +77,6 @@ public class MainActivity extends AppCompatActivity {
         buttonEight.setOnClickListener(numClickListener);
         buttonNine.setOnClickListener(numClickListener);
         buttonZero.setOnClickListener(numClickListener);
-        buttonPoint.setOnClickListener(numClickListener);
-
         buttonC.setOnClickListener(signClickListener);
         buttonDev.setOnClickListener(signClickListener);
         buttonMin.setOnClickListener(signClickListener);
@@ -86,9 +85,26 @@ public class MainActivity extends AppCompatActivity {
         buttonPls.setOnClickListener(signClickListener);
 
 
-
-
-
-
     }
+    private void initThemeChooser() {
+        initRadioButton(findViewById(R.id.radio1),
+                MyCoolCodeStyle);
+        initRadioButton(findViewById(R.id.radio2),
+                OriginalStyle);
+
+        RadioGroup rg = findViewById(R.id.radioButtons);
+        ((MaterialRadioButton)rg.getChildAt(getCodeStyle(MyCoolCodeStyle))).setChecked(true);
+    }
+    private void initRadioButton(View button, final int codeStyle){
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setAppTheme(codeStyle);
+                recreate();
+            }
+        });
+    }
+
+
+
 }

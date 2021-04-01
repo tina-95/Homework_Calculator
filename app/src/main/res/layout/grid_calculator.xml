@@ -8,21 +8,19 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f0d6c9"
-        android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/background3" />
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop" />
 
 
     <GridLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@mipmap/background3"
         android:columnCount="4"
         android:orientation="horizontal">
 
 
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_result"
             android:layout_columnSpan="4"
             android:layout_gravity="fill"
@@ -32,93 +30,103 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_c"
-            android:text="@string/_c"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_c" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_dev"
-            android:text="@string/_dev"
-            style="@style/MyCoolStyle"/>
+            android:text="@string/_dev" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_mul"
-            android:text="@string/_mul"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_mul" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_min"
-            android:text="@string/_min"
-            style="@style/MyCoolStyle"/>
+            android:text="@string/_min" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
-            android:text="@string/_1"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
-            android:text="@string/_2"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
-            android:text="@string/_3"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_pls"
-            android:text="@string/_pls"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_pls" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
-            android:text="@string/_4"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
-            android:text="@string/_5"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
-            android:text="@string/_6"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_6" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equall"
             android:layout_rowSpan="3"
             android:layout_gravity="fill"
-            android:text="@string/_equall"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_equall" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_7"
-            style="@style/MyCoolStyle" />
+            android:text="@string/_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
-            android:text="@string/_8"
-            style="@style/MyCoolStyle"/>
+            android:text="@string/_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
-            android:text="@string/_9"
-            style="@style/MyCoolStyle"/>
+            android:text="@string/_9" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             android:layout_columnSpan="3"
             android:layout_gravity="fill"
-            android:text="@string/_0"
-            style="@style/MyCoolStyle"/>
-
-
+            android:text="@string/_0" />
 
     </GridLayout>
+
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cool_style"
+            android:textSize="24sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/original_style"
+            android:textSize="24sp" />
+
+
+    </RadioGroup>
 </FrameLayout>

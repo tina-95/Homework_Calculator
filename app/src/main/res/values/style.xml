@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <resources>
-        <!-- Base application theme. -->
-        <style name="AppTheme" parent="Theme.AppCompat.DayNight">
-            <!-- Customize your theme here. -->
-            <item name="colorPrimary">@color/colorPrimary</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-            <item name="colorAccent">@color/colorAccent</item>
-        </style>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#01939A</item>
+        <item name="colorPrimaryDark">#006064</item>
+        <item name="colorAccent">#008209</item>
+    </style>
 
-        <style name="MyCoolStyle">
-            <item name="android:textSize">@dimen/buttonText</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:layout_marginStart">@dimen/margin</item>
-            <item name="android:layout_marginEnd">@dimen/margin</item>
-            <item name="android:layout_marginTop">@dimen/margin</item>
-            <item name="android:fontFamily">cursive</item>
-            <item name="android:textStyle">italic</item>
-        </style>
+
+
+    <style name="originalStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/buttonText</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:buttonStyle">@color/dark</item>
+        <item name="android:background">@color/gray</item>
+        <item name="colorAccent">@color/design_default_color_error</item>
+    </style>
+
+
+    <style name="MyCoolStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/buttonText</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="buttonStyle">@color/colorAccent</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">italic</item>
+        <item name="colorAccent">@color/myCustomColor</item>
+    </style>
+
 
     <dimen name="margin">5dp</dimen>
     <dimen name="buttonText">30sp</dimen>
     <color name="colorAccent">#009688</color>
     <color name="colorPrimaryDark">#2196F3</color>
     <color name="colorPrimary">#FF5722</color>
+    <color name ="dark">#000000</color>
+    <color name="gray">#f1f1f1</color>
+    <string name="cool_style">My cool style</string>
+    <string name="original_style">Original style</string>
+
 </resources>
