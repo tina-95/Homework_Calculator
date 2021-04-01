@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:scaleType="centerCrop" />
+
+
+    <GridLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_result"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="5dp"
+            android:background="#ffffff"
+            android:textSize="@dimen/button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_c"
+            style="@style/MyCoolStyle"
+            android:text="@string/_c" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dev"
+            style="@style/MyCoolStyle"
+            android:text="@string/_dev" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_mul"
+            style="@style/MyCoolStyle"
+            android:text="@string/_mul" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_min"
+            style="@style/MyCoolStyle"
+            android:text="@string/_min" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_1"
+            style="@style/MyCoolStyle"
+            android:text="@string/_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_2"
+            style="@style/MyCoolStyle"
+            android:text="@string/_2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_3"
+            style="@style/MyCoolStyle"
+            android:text="@string/_3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_pls"
+            style="@style/MyCoolStyle"
+            android:text="@string/_pls" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_4"
+            style="@style/MyCoolStyle"
+            android:text="@string/_4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_5"
+            style="@style/MyCoolStyle"
+            android:text="@string/_5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_6"
+            style="@style/MyCoolStyle"
+            android:text="@string/_6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_equall"
+            style="@style/MyCoolStyle"
+            android:layout_rowSpan="3"
+            android:layout_gravity="fill"
+            android:text="@string/_equall" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_7"
+            style="@style/MyCoolStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_8"
+            style="@style/MyCoolStyle"
+            android:text="@string/_8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_9"
+            style="@style/MyCoolStyle"
+            android:text="@string/_9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_0"
+            style="@style/MyCoolStyle"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="@string/_0" />
+
+
+    </GridLayout>
+
+
+</FrameLayout>
